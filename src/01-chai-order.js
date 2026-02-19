@@ -64,7 +64,7 @@ export function whisperChaiOrder(order) {
 export function hasSpecialIngredient(order, ingredient) {
   if (typeof order !== "string" || typeof ingredient !== "string") return false;
   const trimmed = order.trim();
-  return order.toLowerCase().includes(ingredient.toLowerCase());
+  return trimmed.toLowerCase().includes(ingredient.toLowerCase());
 }
 
 export function getFirstAndLastChar(order) {
